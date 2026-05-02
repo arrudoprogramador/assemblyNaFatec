@@ -3,15 +3,6 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/github/repo-size/arrudoprogramador/exercicios-assembly?style=flat-square" />
-  <img src="https://img.shields.io/github/languages/top/arrudoprogramador/exercicios-assembly?style=flat-square" />
-  <img src="https://img.shields.io/github/last-commit/arrudoprogramador/exercicios-assembly?style=flat-square" />
-  <img src="https://img.shields.io/github/license/arrudoprogramador/exercicios-assembly?style=flat-square" />
-</p>
-
-<h1 align="center">⚙️ Assembly Exercises</h1>
-
-<p align="center">
   <b>Low-level programming • MIPS • Computer Architecture</b>
 </p>
 
