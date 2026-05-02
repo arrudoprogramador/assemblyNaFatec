@@ -1,4 +1,4 @@
-1. A imobiliária Imóbilis vende apenas terrenos retangulares. Faça um algoritmo para ler as
+1.A imobiliária Imóbilis vende apenas terrenos retangulares. Faça um algoritmo para ler as
 dimensões de um terreno e depois exibir a área do terreno.
 
 2.Uma fábrica de camisetas produz os tamanhos pequeno, médio e grande, cada uma sendo vendida
@@ -29,8 +29,8 @@ imprimindo o resultado.
 9.Fazer um algoritmo que leia 2 números inteiros e exiba a divisão destes. Sabe-se que o 2o número
 não pode ser zero, portanto, deve-se insistir na solicitação do 2o número até ele ser diferente de 0
 
-10. No Assembly MIPS, existe a operação REM que apresenta o resto da divisão de 2 valores inteiros.
-11. SEM UTILIZAR A OPERAÇÃO REM, faça um algoritmo usando DIV, MUL e SUB que receba 2 valores
+10.No Assembly MIPS, existe a operação REM que apresenta o resto da divisão de 2 valores inteiros.
+SEM UTILIZAR A OPERAÇÃO REM, faça um algoritmo usando DIV, MUL e SUB que receba 2 valores
 inteiros e exiba o resto da divisão do maior pelo menor (Condição que deve ser verificada no início
 do algoritmo.
 
