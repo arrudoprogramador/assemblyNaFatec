@@ -1,3 +1,26 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/Assembly-MIPS-blue?style=for-the-badge&logo=gnu&logoColor=white" />
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/github/repo-size/arrudoprogramador/exercicios-assembly?style=flat-square" />
+  <img src="https://img.shields.io/github/languages/top/arrudoprogramador/exercicios-assembly?style=flat-square" />
+  <img src="https://img.shields.io/github/last-commit/arrudoprogramador/exercicios-assembly?style=flat-square" />
+  <img src="https://img.shields.io/github/license/arrudoprogramador/exercicios-assembly?style=flat-square" />
+</p>
+
+<h1 align="center">⚙️ Assembly Exercises</h1>
+
+<p align="center">
+  <b>Low-level programming • MIPS • Computer Architecture</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Em%20Progresso-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Estudos-black?style=for-the-badge" />
+</p>
+
+<h3>Exercícios</h3>
 1.A imobiliária Imóbilis vende apenas terrenos retangulares. Faça um algoritmo para ler as
 dimensões de um terreno e depois exibir a área do terreno.
 
