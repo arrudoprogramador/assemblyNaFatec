@@ -5,7 +5,7 @@
 
 .text
 
-main:
+
 	# Eu preciso atribuir uma função ao v0, como uma impressão de string (4)
 	li $v0, 4
 	# la é para chamada de strings e as strings são acessadas pelo registrador a0
@@ -46,9 +46,3 @@ main:
 	# Encerro o programa
 	li $v0, 10
 	syscall
-	
-	
-	
-	
-	
-	
