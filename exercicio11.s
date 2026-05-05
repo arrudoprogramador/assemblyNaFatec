@@ -1,16 +1,16 @@
 .data
-	msg0: .asciiz"\nQuantidade de números entre 0 e 25:"
-	msg1: .asciiz"\nQuantidade de números entre 25 e 50:"
-	msg2: .asciiz"\nQuantidade de números entre 50 e 75:"
-	msg3: .asciiz"\nQuantidade de números entre 75 e 100:"
-	msg4: .asciiz"Digite números para classificação(para finalizar, digite um valor negativo):\n"
-	msg5: .asciiz"Valor inválido!!\n"
+	msg0: .asciiz"\nQuantidade de nÃºmeros entre 0 e 25:"
+	msg1: .asciiz"\nQuantidade de nÃºmeros entre 25 e 50:"
+	msg2: .asciiz"\nQuantidade de nÃºmeros entre 50 e 75:"
+	msg3: .asciiz"\nQuantidade de nÃºmeros entre 75 e 100:"
+	msg4: .asciiz"Digite nÃºmeros para classificaÃ§Ã£o(para finalizar, digite um valor negativo):\n"
+	msg5: .asciiz"Valor invÃ¡lido!!\n"
 
 .text
 
 main:
 
-	faça:
+	faÃ§a:
 		li $v0, 4
 		la $a0, msg4
 		syscall 
@@ -34,29 +34,29 @@ main:
 		ate25:
 			add $t0, $t0, 1
 			
-			j faça	
+			j faÃ§a	
 		ate50:	
 			add $t1, $t1, 1
 			
-			j faça
+			j faÃ§a
 		ate75:
 			add $t2, $t2, 1	
 			
-			j faça
+			j faÃ§a
 		ate100:	
 			add $t3, $t3, 1	
 			
-			j faça
+			j faÃ§a
 			
 		maior: 
 			li $v0, 4
 			la $a0, msg5
 			syscall
 			
-			j faça
+			j faÃ§a
 			
 	fim:
-		#Mostrar até 25
+		#Mostrar atÃ© 25
 		li $v0, 4
 		la $a0, msg0
 		syscall
@@ -65,7 +65,7 @@ main:
 		move $a0, $t0 
 		syscall
 	
-		#Mostrar até 50
+		#Mostrar atÃ© 50
 		li $v0, 4
 		la $a0, msg1
 		syscall
@@ -74,7 +74,7 @@ main:
 		move $a0, $t1 
 		syscall
 		
-		#Mostrar até 75
+		#Mostrar atÃ© 75
 		li $v0, 4
 		la $a0, msg2
 		syscall
@@ -83,7 +83,7 @@ main:
 		move $a0, $t2 
 		syscall
 		
-		#Mostrar até 100
+		#Mostrar atÃ© 100
 		li $v0, 4
 		la $a0, msg3
 		syscall
@@ -91,7 +91,6 @@ main:
 		li $v0, 1
 		move $a0, $t3 
 		syscall
-	
 	
 	li $v0, 10
 	syscall
