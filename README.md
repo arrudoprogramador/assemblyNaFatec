@@ -23,6 +23,7 @@ quantidade de camisetas pequenas, médias e grandes referentes a uma venda, e a 
 quanto será o valor arrecadado.
 
 
+
 3.A empresa Hipotheticus paga R$10,00 por hora normal trabalhada, e R$15,00 por hora extra. Faça
 um algoritmo para calcular e imprimir o salário bruto e o salário líquido de um determinado
 funcionário. Considere, também, uma entrada de desconto para calcular o salário líquido.
@@ -72,6 +73,12 @@ calcular e mostrar:
 a. A menor altura do grupo;
 
 b. A maior altura do grupo;
+
+
+
+
+
+
 
 
 
@@ -125,6 +132,19 @@ deve ser validado na entrada). O algoritmo, sabendo que a última parcela pode s
 inferior às anteriores, deve calcular quantas parcelas serão pagas.
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h3>Exercícios Lista 3 Assembly</h3>
 
 Fazer, em Assembly MIPS, algoritmos que resolvam os problemas abaixo (Utilizando apenas
@@ -138,9 +158,9 @@ valor.
 4. Receba 4 notas bimestrais de um aluno. Calcule e mostre a média aritmética. Mostre a
 mensagem de acordo com a média:
 
-a. Se a média for >= 6,0 exibir “APROVADO”;
-b. Se a média for >= 3,0 ou < 6,0 exibir “EXAME”;
-c. Se a média for < 3,0 exibir “RETIDO”.
+  a. Se a média for >= 6,0 exibir “APROVADO”;
+  b. Se a média for >= 3,0 ou < 6,0 exibir “EXAME”;
+  c. Se a média for < 3,0 exibir “RETIDO”.
 
 5. Receba 2 números inteiros, verifique qual o maior entre eles. Calcule e mostre o resultado da
 somatória dos números ímpares entre esses valores
@@ -149,9 +169,21 @@ Obs.: somente valores positivos. Se o número for negativo, deve ser desconsider
 novamente.
 
 
+
+
+
+
+
 <h3>Atividade Avaliativa</h3>>
+
 Faça um algoritmo que leia dois valores correspondentes a anos e mostre quais os anos não bissextos 
 existem entre eles. (A diferença entre os anos não pode ser maior que 1000, caso seja, deve ser novamente solicitado.)
+
+
+
+
+
+
 
 
 Arquitetura e Organização de Computadores FATEC ZL
