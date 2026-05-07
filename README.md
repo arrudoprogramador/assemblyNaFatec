@@ -7,6 +7,12 @@
 </p>
 
 <p align="center">
+  <img src="https://img.shields.io/badge/Status-Em%20Progresso-yellow?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Focus-Estudos-black?style=for-the-badge" />
+</p>
+<hr>
+
+<p align="center">
 Arquitetura e Organização de Computadores — FATEC ZL
 <br>
 Prof. Leandro Colevati
