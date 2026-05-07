@@ -282,12 +282,5 @@ Caso um número negativo seja informado, ele deverá ser desconsiderado e solici
 
 <p>
 Desenvolva um algoritmo que leia dois anos e exiba todos os anos não bissextos existentes entre eles.
-</p>
-
-<p>
 A diferença entre os anos não pode ser superior a 1000. Caso seja, os valores deverão ser solicitados novamente.
 </p>
-
-
-Arquitetura e Organização de Computadores FATEC ZL
-Prof. Leandro Colevati Assembly MIPS
