@@ -1,4 +1,10 @@
-<h1 align="center">Exercícios de Assembly MIPS</h1>
+<p align="center">
+  <img src="https://img.shields.io/badge/Assembly-MIPS-blue?style=for-the-badge&logo=gnu&logoColor=white" />
+</p>
+
+<p align="center">
+  <b>Low-level programming • MIPS • Computer Architecture</b>
+</p>
 
 <p align="center">
 Arquitetura e Organização de Computadores — FATEC ZL
@@ -8,7 +14,7 @@ Prof. Leandro Colevati
 
 <hr>
 
-<h2>Lista 1 — Fundamentos</h2>
+<h2>Exercícios da Lista 1</h2>
 
 <ol>
 <li>
@@ -44,15 +50,6 @@ Considere também um valor de desconto informado pelo usuário.
 
 <li>
 Faça um algoritmo que calcule a área de um trapézio utilizando apenas números inteiros.
-
-<br><br>
-
-Fórmula:
-
-\[
-A = \frac{(BaseMaior + BaseMenor) \times Altura}{2}
-\]
-
 </li>
 
 <li>
@@ -131,7 +128,7 @@ Leia a altura, em centímetros, de 15 pessoas e exiba:
 
 <hr>
 
-<h2>Lista 2 — Estruturas Condicionais</h2>
+<h2>Exercícios da Lista 2</h2>
 
 <ol>
 <li>
@@ -228,7 +225,7 @@ A última parcela poderá possuir valor inferior às demais.
 
 <hr>
 
-<h2>Lista 3 — Operações Matemáticas e Repetição</h2>
+<h2>Exercícios da Lista 3</h2>
 
 <ol>
 <li>
