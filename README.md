@@ -1,189 +1,289 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/Assembly-MIPS-blue?style=for-the-badge&logo=gnu&logoColor=white" />
-</p>
+<h1 align="center">Exercícios de Assembly MIPS</h1>
 
 <p align="center">
-  <b>Low-level programming • MIPS • Computer Architecture</b>
+Arquitetura e Organização de Computadores — FATEC ZL
+<br>
+Prof. Leandro Colevati
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Status-Em%20Progresso-yellow?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Focus-Estudos-black?style=for-the-badge" />
-</p>
+<hr>
 
-<h3>Exercícios Lista 1 Assembly</h3>
+<h2>Lista 1 — Fundamentos</h2>
 
-1.A imobiliária Imóbilis vende apenas terrenos retangulares. Faça um algoritmo para ler as
-dimensões de um terreno e depois exibir a área do terreno.
+<ol>
+<li>
+A imobiliária <strong>Imóbilis</strong> vende apenas terrenos retangulares. Faça um algoritmo para ler as dimensões de um terreno e exibir sua área.
+</li>
 
+<li>
+Uma fábrica de camisetas produz os tamanhos:
+<ul>
+<li>Pequeno — R$10</li>
+<li>Médio — R$12</li>
+<li>Grande — R$15</li>
+</ul>
 
-2.Uma fábrica de camisetas produz os tamanhos pequeno, médio e grande, cada uma sendo vendida
-respectivamente por 10, 12 e 15 reais. Construa um algoritmo em que o usuário forneça a
-quantidade de camisetas pequenas, médias e grandes referentes a uma venda, e a máquina informe
-quanto será o valor arrecadado.
+Desenvolva um algoritmo que receba a quantidade vendida de cada tamanho e informe o valor arrecadado.
+</li>
 
+<li>
+A empresa <strong>Hipotheticus</strong> paga:
+<ul>
+<li>R$10 por hora normal</li>
+<li>R$15 por hora extra</li>
+</ul>
 
+Faça um algoritmo que calcule:
+<ul>
+<li>Salário bruto</li>
+<li>Salário líquido</li>
+</ul>
 
-3.A empresa Hipotheticus paga R$10,00 por hora normal trabalhada, e R$15,00 por hora extra. Faça
-um algoritmo para calcular e imprimir o salário bruto e o salário líquido de um determinado
-funcionário. Considere, também, uma entrada de desconto para calcular o salário líquido.
+Considere também um valor de desconto informado pelo usuário.
+</li>
 
+<li>
+Faça um algoritmo que calcule a área de um trapézio utilizando apenas números inteiros.
 
-4.Faça um algoritmo que calcule e mostre a área de um trapézio usando apenas números inteiros.
-Sabe-se que: A = (base maior + base menor) * altura)/2
+<br><br>
 
+Fórmula:
 
-5.Faça um algoritmo que receba o valor dos catetos de um triângulo, calcule e mostre o valor da
-hipotenusa.
+\[
+A = \frac{(BaseMaior + BaseMenor) \times Altura}{2}
+\]
 
+</li>
 
-6.Faça um algoritmo que leia dois valores inteiros A e B se os valores forem iguais deverá se somar
-os dois, caso contrário multiplique A por B. Ao final de qualquer um dos cálculos deve-se atribuir o
-resultado para uma variável C e mostrar seu conteúdo na tela.
+<li>
+Faça um algoritmo que receba os valores dos catetos de um triângulo e calcule a hipotenusa.
+</li>
 
+<li>
+Leia dois valores inteiros <strong>A</strong> e <strong>B</strong>:
+<ul>
+<li>Se forem iguais, some os valores;</li>
+<li>Se forem diferentes, multiplique A por B.</li>
+</ul>
 
-7.Faça um algoritmo que leia uma variável e some 5, caso seja par ou some 8, caso seja ímpar,
-imprimir o resultado desta operação.
+Armazene o resultado em uma variável <strong>C</strong> e exiba seu conteúdo.
+</li>
 
+<li>
+Leia um número inteiro:
+<ul>
+<li>Se for par, some 5;</li>
+<li>Se for ímpar, some 8.</li>
+</ul>
 
-8.Encontrar o dobro de um número caso ele seja positivo e o seu triplo caso seja negativo,
-imprimindo o resultado.
+Exiba o resultado final.
+</li>
 
+<li>
+Encontre:
+<ul>
+<li>O dobro do número, caso seja positivo;</li>
+<li>O triplo do número, caso seja negativo.</li>
+</ul>
+</li>
 
-9.Fazer um algoritmo que leia 2 números inteiros e exiba a divisão destes. Sabe-se que o 2o número
-não pode ser zero, portanto, deve-se insistir na solicitação do 2o número até ele ser diferente de 0
+<li>
+Leia dois números inteiros e exiba sua divisão.
 
+O segundo número não pode ser zero. O programa deve solicitar novamente até receber um valor válido.
+</li>
 
-10.No Assembly MIPS, existe a operação REM que apresenta o resto da divisão de 2 valores inteiros.
-SEM UTILIZAR A OPERAÇÃO REM, faça um algoritmo usando DIV, MUL e SUB que receba 2 valores
-inteiros e exiba o resto da divisão do maior pelo menor (Condição que deve ser verificada no início
-do algoritmo.
+<li>
+No Assembly MIPS existe a instrução <strong>REM</strong>, responsável por retornar o resto da divisão.
 
+Sem utilizar a instrução <strong>REM</strong>, desenvolva um algoritmo utilizando apenas:
+<ul>
+<li>DIV</li>
+<li>MUL</li>
+<li>SUB</li>
+</ul>
 
-11.Escrever um algoritmo que leia uma quantidade desconhecida de números e conte quantos deles
-estão nos seguintes intervalos: [0-25], [26-50], [51-75] e [76-100]. A entrada de dados deve terminar
-quando for lido um número negativo.
-*Sabe-se que a entrada deve ser um número entre 0 e 100, validar a entrada para que não permita
-números fora deste intervalo
+O programa deve calcular o resto da divisão do maior valor pelo menor.
+</li>
 
+<li>
+Leia uma quantidade desconhecida de números inteiros e conte quantos pertencem aos seguintes intervalos:
+<ul>
+<li>[0 – 25]</li>
+<li>[26 – 50]</li>
+<li>[51 – 75]</li>
+<li>[76 – 100]</li>
+</ul>
 
-12.Desenvolver um algoritmo que leia a altura, em centímetros de 15 pessoas. Este programa deverá
-calcular e mostrar:
+A leitura termina quando for digitado um número negativo.
 
-a. A menor altura do grupo;
+Validar a entrada para aceitar apenas números entre 0 e 100.
+</li>
 
-b. A maior altura do grupo;
+<li>
+Leia a altura, em centímetros, de 15 pessoas e exiba:
+<ul>
+<li>A menor altura do grupo;</li>
+<li>A maior altura do grupo.</li>
+</ul>
+</li>
+</ol>
 
+<hr>
 
+<h2>Lista 2 — Estruturas Condicionais</h2>
 
+<ol>
+<li>
+Elabore um programa que converta um valor em dólar (US$) para real (R$).
 
+Considere:
+<ul>
+<li>1 dólar = R$5;</li>
+<li>Utilizar apenas números inteiros.</li>
+</ul>
+</li>
 
+<li>
+Leia dois valores em registradores e realize a troca de seus conteúdos.
 
+Exiba os valores após a troca.
+</li>
 
+<li>
+Leia:
+<ul>
+<li>Mês e ano de nascimento;</li>
+<li>Mês e ano atual.</li>
+</ul>
 
+Calcule a idade da pessoa em meses.
+</li>
 
-<h3>Exercícios Lista 2 Assembly</h3>
+<li>
+A empresa <strong>ABC LTDA</strong> concederá um aumento de 25% aos funcionários.
 
-1.Elaborar um programa que apresente o valor da conversão em real (R$) de um valor lido em
-dólar (US$). O programa deve considerar a cotação do dólar em R$5 (Usar apenas números
-inteiros).
+Desenvolva um algoritmo que leia o salário atual e informe o novo salário.
 
-2.Ler dois valores para 2 registradores e efetuar a troca dos valores de forma que o valor do
-primeiro registrador passe ao segundo e o segundo passe ao primeiro. Apresentar os valores
-após a efetivação do processamento da troca.
+Utilize apenas números inteiros:
+<ul>
+<li>Multiplique o salário por 25;</li>
+<li>Divida o resultado por 100.</li>
+</ul>
+</li>
 
-3. Crie um programa que lê o mês e o ano de nascimento de uma pessoa e o mês e ano atual.
-Calcule e mostre qual é: a idade da pessoa em meses.
+<li>
+Leia os coeficientes <strong>A</strong>, <strong>B</strong> e <strong>C</strong> de uma equação do segundo grau e analise o valor de DELTA:
 
-4.O proprietário da empresa ABC LTDA precisa de um programa de computador para calcular o
-novo salário que seus funcionários irão receber a partir do mês que vem. Sabendo que o
-aumento de salário para todos os funcionários será de 25%, faça um programa que lê o valor do
-salário atual do funcionário e informa o seu novo salário acrescido de 25% (Por se tratar de
-apenas número inteiros, para calcular 25% deve-se multiplicar o valor por 25 e dividir por 100).
+<ul>
+<li>Δ &gt; 0 → “DUAS RAÍZES REAIS”;</li>
+<li>Δ = 0 → “UMA RAIZ REAL”;</li>
+<li>Δ &lt; 0 → “NÃO EXISTEM RAÍZES REAIS”.</li>
+</ul>
 
-5.Escreva um programa que pergunte os coeficientes de uma equação de segundo grau (A, B e
-C) e:
-a) se DELTA for maior que zero: imprima “DUAS RAÍZES REAIS”;
-b) se DELTA for igual a zero: imprima apenas “UMA RAÍZ REAL”;
-c) se DELTA menor que zero: imprima a mensagem “NÃO EXISTEM RAÍZES REAIS”.
-(Não é necessário calcular as raízes caso existam).
+Não é necessário calcular as raízes.
+</li>
 
-6.Escreva um programa que pergunte dois números e indique se são iguais ou diferentes. Caso
-sejam diferentes, mostre o maior e o menor (nesta ordem).
+<li>
+Leia dois números e informe:
+<ul>
+<li>Se são iguais;</li>
+<li>Se forem diferentes, exiba o maior e o menor.</li>
+</ul>
+</li>
 
-7.Ler um número inteiro e imprimir a saída da seguinte forma:
+<li>
+Leia um número inteiro entre 100 e 999 e exiba:
+
+<pre>
 CENTENA = x
-DEZENA = y
+DEZENA  = y
 UNIDADE = z
+</pre>
+
 Exemplo:
-Entrada = 517
+
+<pre>
+Entrada: 517
+
 Saída:
 CENTENA = 5
-DEZENA = 1
+DEZENA  = 1
 UNIDADE = 7
-*Sabe-se que a entrada deve ser um número entre 100 e 999, validar a entrada para que não
-permita números fora deste intervalo
+</pre>
 
-8.Escreva um algoritmo que leia (em números inteiros) o valor da compra de um produto da Loja
-Vende Tudo. A loja só vende produtos de valor entre R$1000.00 e R$9999.99 (Que deve ser
-validado na entrada). A loja permite pagar o valor em parcelas fixas. O algoritmo deve ler
-também o valor da parcela a ser paga, que deve ser um valor entre R$100.00 e R$500.00 (Que
-deve ser validado na entrada). O algoritmo, sabendo que a última parcela pode ser de valor
-inferior às anteriores, deve calcular quantas parcelas serão pagas.
+Validar a entrada.
+</li>
 
+<li>
+A loja <strong>Vende Tudo</strong> comercializa produtos com valores entre R$1000 e R$9999.
 
+O valor das parcelas deve estar entre R$100 e R$500.
 
+O programa deve calcular a quantidade de parcelas necessárias.
 
+A última parcela poderá possuir valor inferior às demais.
+</li>
+</ol>
 
+<hr>
 
+<h2>Lista 3 — Operações Matemáticas e Repetição</h2>
 
+<ol>
+<li>
+Receba comprimento, largura e altura de um paralelepípedo e calcule seu volume.
+</li>
 
+<li>
+Receba o raio de uma circunferência e calcule seu comprimento.
 
+Considere:
+<ul>
+<li>π = 3.</li>
+</ul>
+</li>
 
+<li>
+Leia dois valores inteiros e mostre a diferença entre o maior e o menor valor.
+</li>
 
+<li>
+Leia quatro notas bimestrais de um aluno, calcule a média aritmética e exiba:
 
+<ul>
+<li>“APROVADO”, se média ≥ 6;</li>
+<li>“EXAME”, se média ≥ 3 e &lt; 6;</li>
+<li>“RETIDO”, se média &lt; 3.</li>
+</ul>
+</li>
 
+<li>
+Leia dois números inteiros, identifique o maior valor e calcule a soma dos números ímpares existentes entre eles.
+</li>
 
+<li>
+Leia 10 números inteiros positivos e exiba:
+<ul>
+<li>O maior valor;</li>
+<li>O menor valor.</li>
+</ul>
 
-<h3>Exercícios Lista 3 Assembly</h3>
+Caso um número negativo seja informado, ele deverá ser desconsiderado e solicitado novamente.
+</li>
+</ol>
 
-Fazer, em Assembly MIPS, algoritmos que resolvam os problemas abaixo (Utilizando apenas
-tipo Inteiro de dados):
-1. Receba os valores do comprimento, largura e altura de um paralelepípedo. Calcule e mostre
-seu volume.
-2. Receba o raio de uma circunferência. Calcule e mostre o comprimento da circunferência.
-Considere PI = 3.
-3. Receba 2 valores inteiros. Calcule e mostre o resultado da diferença do maior pelo menor
-valor.
-4. Receba 4 notas bimestrais de um aluno. Calcule e mostre a média aritmética. Mostre a
-mensagem de acordo com a média:
+<hr>
 
-  a. Se a média for >= 6,0 exibir “APROVADO”;
-  b. Se a média for >= 3,0 ou < 6,0 exibir “EXAME”;
-  c. Se a média for < 3,0 exibir “RETIDO”.
+<h2>Atividade Avaliativa</h2>
 
-5. Receba 2 números inteiros, verifique qual o maior entre eles. Calcule e mostre o resultado da
-somatória dos números ímpares entre esses valores
-6. Receba 10 números inteiros reais. Verifique e mostre o maior e o menor valor.
-Obs.: somente valores positivos. Se o número for negativo, deve ser desconsiderado e solicitado
-novamente.
+<p>
+Desenvolva um algoritmo que leia dois anos e exiba todos os anos não bissextos existentes entre eles.
+</p>
 
-
-
-
-
-
-
-<h3>Atividade Avaliativa</h3>>
-
-Faça um algoritmo que leia dois valores correspondentes a anos e mostre quais os anos não bissextos 
-existem entre eles. (A diferença entre os anos não pode ser maior que 1000, caso seja, deve ser novamente solicitado.)
-
-
-
-
-
-
+<p>
+A diferença entre os anos não pode ser superior a 1000. Caso seja, os valores deverão ser solicitados novamente.
+</p>
 
 
 Arquitetura e Organização de Computadores FATEC ZL
