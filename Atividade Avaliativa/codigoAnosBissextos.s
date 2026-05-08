@@ -1,16 +1,17 @@
 .data
-	msg0: .asciiz"\nDigite o primeiro ano do período estimado:"
-	msg1: .asciiz"\nDigite o segundo ano do período estimado:"
-	msg2: .asciiz"\nOs anos não bissextos entre "
+	msg0: .asciiz"\nDigite o primeiro ano do perï¿½odo estimado:"
+	msg1: .asciiz"\nDigite o segundo ano do perï¿½odo estimado:"
+	msg2: .asciiz"\nOs anos nï¿½o bissextos entre "
 	msg3: .asciiz" e "
-	msg4: .asciiz" são: \n"
+	msg4: .asciiz" sï¿½o: \n"
 	msg5: .asciiz"\n"
 		
 .text
+
 main:
 
-começo:
-	# Exibição da mensagem de primeira entrada
+comeï¿½o:
+	# Exibiï¿½ï¿½o da mensagem de primeira entrada
 	li $v0, 4
 	la $a0, msg0
 	syscall
@@ -20,7 +21,7 @@ começo:
 	syscall
 	add $t0, $v0, 0
 	
-	# Exibição da mensagem de segunda entrada
+	# Exibiï¿½ï¿½o da mensagem de segunda entrada
 	li $v0, 4
 	la $a0, msg1
 	syscall
@@ -31,22 +32,22 @@ começo:
 	add $t1, $v0, 0
 	
 	# Igual
-	beq $t0, $t1, diferençaPrimeiraEntradaMaior
+	beq $t0, $t1, diferenï¿½aPrimeiraEntradaMaior
 	
 	# Se a primeira entrada for maior que a segunda...
-	bgt $t0, $t1, diferençaPrimeiraEntradaMaior
+	bgt $t0, $t1, diferenï¿½aPrimeiraEntradaMaior
 	
 	# Agora se a segunda entrada for maior que a primeira...
-	bgt $t1, $t0, diferençaPrimeiraEntradaMenor
+	bgt $t1, $t0, diferenï¿½aPrimeiraEntradaMenor
 	
-	# Diferença
-	diferençaPrimeiraEntradaMaior:
+	# Diferenï¿½a
+	diferenï¿½aPrimeiraEntradaMaior:
 		sub $t2, $t0, $t1
 		
-		# Verifica se a diferença é maior igual a 1000
-		bge $t2, 1000, começo
+		# Verifica se a diferenï¿½a ï¿½ maior igual a 1000
+		bge $t2, 1000, comeï¿½o
 		
-		# "Os anos não bissextos entre"
+		# "Os anos nï¿½o bissextos entre"
 		li $v0, 4
 		la $a0, msg2
 		syscall
@@ -73,13 +74,13 @@ começo:
 		
 		j se
 	
-	diferençaPrimeiraEntradaMenor:
+	diferenï¿½aPrimeiraEntradaMenor:
 		sub $t2, $t1, $t0
 		
-		# Verifica se a diferença é maior igual a 1000
-		bge $t2, 1000, começo
+		# Verifica se a diferenï¿½a ï¿½ maior igual a 1000
+		bge $t2, 1000, comeï¿½o
 		
-		# "Os anos não bissextos entre"
+		# "Os anos nï¿½o bissextos entre"
 		li $v0, 4
 		la $a0, msg2
 		syscall
@@ -108,33 +109,33 @@ começo:
 	
 	se:
 		# Looping: enquanto a primeira entrada for MAIOR ou igual a segunda
-		bge $t0, $t1, faça
+		bge $t0, $t1, faï¿½a
 		j fim
 		
-		faça: 
+		faï¿½a: 
 			rem $s0, $t1, 400
 			
 			beqz $s0, bissexto
 			
-			# verifica se o ano é divisível por 100, se for, NÃO BISSEXTO
-			segundaCondição:
+			# verifica se o ano ï¿½ divisï¿½vel por 100, se for, Nï¿½O BISSEXTO
+			segundaCondiï¿½ï¿½o:
 				rem $s1, $t1, 100
 				
-				beqz $s1, nãoBissexto
-				bgtz $s1, terceiraCondição
+				beqz $s1, nï¿½oBissexto
+				bgtz $s1, terceiraCondiï¿½ï¿½o
 				
-			# verifica se o ano é divisível por 400, se for, BISSEXTO
-			terceiraCondição:
+			# verifica se o ano ï¿½ divisï¿½vel por 400, se for, BISSEXTO
+			terceiraCondiï¿½ï¿½o:
 				rem $s2, $t1, 4
 				
 				beqz $s2, bissexto
-				bgtz $s2, nãoBissexto
+				bgtz $s2, nï¿½oBissexto
 			
 			bissexto:
 				
 				j contadorSe
 			
-			nãoBissexto:
+			nï¿½oBissexto:
 				li $v0, 1
 				mul $a0, $t1, 1
 				syscall
@@ -163,14 +164,14 @@ começo:
 			beqz $s0, leapYear
 			bgtz $s0, secondCondition
 			
-			# verifica se o ano é divisível por 100, se for, NÃO BINÁRIO
+			# verifica se o ano ï¿½ divisï¿½vel por 100, se for, Nï¿½O BINï¿½RIO
 			secondCondition:
 				rem $s1, $t0, 100
 				
 				beqz $s1, noLeapYear
 				bgtz $s1, thirdCondition	
 						
-			# verifica se o ano é divisível por 400, se for, BISSEXTO
+			# verifica se o ano ï¿½ divisï¿½vel por 400, se for, BISSEXTO
 			thirdCondition:
 				rem $s2, $t0, 4
 				
