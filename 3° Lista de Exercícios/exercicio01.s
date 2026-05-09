@@ -7,7 +7,7 @@
 .text
 
 main:
-	#Altura]
+	#Altura
 	li $v0, 4
 	la $a0, msg1
 	syscall

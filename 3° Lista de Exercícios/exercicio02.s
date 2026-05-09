@@ -17,7 +17,8 @@ main:
 	add $t1, $t1, 3
 	
 	# Comprimento = 2pi.R
-	#2pi
+	
+	# 2 x pi
 	mul $t2, $t1, 2
 	
 	# Vezes o raio
