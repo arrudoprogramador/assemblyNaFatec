@@ -2,7 +2,7 @@
 	msg0: .asciiz"Digite um número: "
 	msg1: .asciiz"\nO maior número é: "
 	msg2: .asciiz"\nO menor número é: "
-	msg3: .asciiz"Você deverá digitar 10 números individualmente a seguir\n"
+	msg3: .asciiz"Você deverá digitar, individualmente, 10 números a seguir\n"
 .text
 
 main:
