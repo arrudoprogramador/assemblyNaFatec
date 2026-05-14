@@ -1,18 +1,18 @@
 .data
-	msg0: .asciiz "Digite o primeiro ano do per�odo estimado: "
-	msg1: .asciiz "\nDigite o segundo ano do per�odo estimado: "
-	msg2: .asciiz "\nOs anos n�o bissextos entre "
+	msg0: .asciiz "Digite o primeiro ano do periodo estimado: "
+	msg1: .asciiz "\nDigite o segundo ano do periodo estimado: "
+	msg2: .asciiz "\nOs anos não bissextos entre "
 	msg3: .asciiz " e "
-	msg4: .asciiz " s�o: \n"
+	msg4: .asciiz " são: \n"
 	msg5: .asciiz "\n"
-	msg6: .asciiz "\nO intervalo deve ser de at� 1.000 anos\n"
+	msg6: .asciiz "\nO intervalo entre deve ser de até 1.000 anos\n"
 		
 .text
 
 main:
 
 inicio:
-	# Exibi��o da mensagem de primeira entrada
+	# Exibicoo da mensagem de primeira entrada
 	li $v0, 4
 	la $a0, msg0
 	syscall
@@ -22,7 +22,7 @@ inicio:
 	syscall
 	add $t0, $v0, 0
 	
-	# Exibi��o da mensagem de segunda entrada
+	# Exibição da mensagem de segunda entrada
 	li $v0, 4
 	la $a0, msg1
 	syscall
@@ -41,14 +41,14 @@ inicio:
 	# Agora se a segunda entrada for maior que a primeira...
 	bgt $t1, $t0, validaPrimeiroAnoMenor
 	
-	# Diferen�a
+	# Diferenca
 	validaPrimeiroAnoMaior:
 		sub $t2, $t0, $t1
 		
-		# Verifica se a diferen�a � maior que 1000
+		# Verifica se a diferenca eh maior que 1000
 		bgt $t2, 1000, invalido
 		
-		# "Os anos n�o bissextos entre"
+		# "Os anos não bissextos entre"
 		li $v0, 4
 		la $a0, msg2
 		syscall
@@ -68,7 +68,7 @@ inicio:
 		add $a0, $t0, 0
 		syscall
 		
-		# "s�o:"
+		# "são:"
 		li $v0, 4
 		la $a0, msg4
 		syscall
@@ -78,10 +78,10 @@ inicio:
 	validaPrimeiroAnoMenor:
 		sub $t2, $t1, $t0
 		
-		# Verifica se a diferen�a � maior que 1000
+		# Verifica se a diferença eh maior que 1000
 		bgt $t2, 1000, invalido
 		
-		# "Os anos n�o bissextos entre"
+		# "Os anos não bissextos entre"
 		li $v0, 4
 		la $a0, msg2
 		syscall
@@ -101,7 +101,7 @@ inicio:
 		add $a0, $t0, 0
 		syscall
 		
-		# "s�o:"
+		# "são:"
 		li $v0, 4
 		la $a0, msg4
 		syscall
@@ -109,7 +109,7 @@ inicio:
 		j loopDecrescente
 	
 	loopCrescente:
-		# Looping: enquanto a primeira entrada for MAIOR ou igual � segunda
+		# Looping: enquanto a primeira entrada for MAIOR ou igual a segunda
 		bge $t0, $t1, processaAnoCrescente
 		j fim
 		
@@ -118,14 +118,14 @@ inicio:
 			
 			beqz $s0, anoBissexto
 			
-			# verifica se o ano � divis�vel por 100
+			# verifica se o ano eh divisível por 100
 			verificaDivisivelPor100:
 				rem $s1, $t1, 100
 				
 				bgtz $s1, verificaDivisivelPor4
 				beqz $s1, anoNaoBissexto
 				
-			# verifica se o ano � divis�vel por 4
+			# verifica se o ano eh divisível por 4
 			verificaDivisivelPor4:
 				rem $s2, $t1, 4
 				
@@ -153,7 +153,7 @@ inicio:
 		j fim
 		
 	loopDecrescente:
-		# Looping: enquanto a primeira entrada for MENOR ou igual � segunda
+		# Looping: enquanto a primeira entrada for MENOR ou igual à segunda
 		bge $t1, $t0, processaAnoDecrescente
 		j fim
 		
@@ -163,14 +163,14 @@ inicio:
 			beqz $s0, anoBissextoDecrescente
 			bgtz $s0, verificaDivisivelPor100Decrescente
 			
-			# verifica se o ano � divis�vel por 100
+			# verifica se o ano é divisivel por 100
 			verificaDivisivelPor100Decrescente:
 				rem $s1, $t0, 100
 				
 				bgtz $s1, verificaDivisivelPor4Decrescente
 				beqz $s1, anoNaoBissextoDecrescente
 						
-			# verifica se o ano � divis�vel por 4
+			# verifica se o ano eh divisível por 4
 			verificaDivisivelPor4Decrescente:
 				rem $s2, $t0, 4
 				
