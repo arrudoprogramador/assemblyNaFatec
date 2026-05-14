@@ -49,7 +49,7 @@ main:
 	
 	
 	bgt $t1, $t3, invalido
-	ble $t2, $t0, logica
+	blt $t2, $t0, logica
 	
 	j faça
 	
