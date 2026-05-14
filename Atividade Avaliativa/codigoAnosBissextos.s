@@ -5,7 +5,7 @@
 	msg3: .asciiz " e "
 	msg4: .asciiz " sao: \n"
 	msg5: .asciiz "\n"
-	msg6: .asciiz "\nO intervalo entre deve ser de ate 1.000 anos\n"
+	msg6: .asciiz "\nO intervalo deve ser de ate 1.000 anos\n"
 		
 .text
 
