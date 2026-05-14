@@ -1,10 +1,11 @@
 .data
-	msg0: .asciiz "\nDigite o primeiro ano do período estimado: "
+	msg0: .asciiz "Digite o primeiro ano do período estimado: "
 	msg1: .asciiz "\nDigite o segundo ano do período estimado: "
 	msg2: .asciiz "\nOs anos não bissextos entre "
 	msg3: .asciiz " e "
 	msg4: .asciiz " são: \n"
 	msg5: .asciiz "\n"
+	msg6: .asciiz "\nO intervalo entre deve ser de até 1.000 anos\n"
 		
 .text
 
@@ -45,7 +46,7 @@ inicio:
 		sub $t2, $t0, $t1
 		
 		# Verifica se a diferença é maior que 1000
-		bgt $t2, 1000, inicio
+		bgt $t2, 1000, invalido
 		
 		# "Os anos não bissextos entre"
 		li $v0, 4
@@ -78,7 +79,7 @@ inicio:
 		sub $t2, $t1, $t0
 		
 		# Verifica se a diferença é maior que 1000
-		bgt $t2, 1000, inicio
+		bgt $t2, 1000, invalido
 		
 		# "Os anos não bissextos entre"
 		li $v0, 4
@@ -166,8 +167,8 @@ inicio:
 			verificaDivisivelPor100Decrescente:
 				rem $s1, $t0, 100
 				
+				bgtz $s1, verificaDivisivelPor4Decrescente
 				beqz $s1, anoNaoBissextoDecrescente
-				bgtz $s1, verificaDivisivelPor4Decrescente	
 						
 			# verifica se o ano é divisível por 4
 			verificaDivisivelPor4Decrescente:
@@ -197,6 +198,13 @@ inicio:
 		
 		j fim
 		
-fim:
-	li $v0, 10
-	syscall
+	invalido:
+		li $v0, 4
+		la $a0, msg6
+		syscall
+		
+		j inicio
+		
+	fim:
+		li $v0, 10
+		syscall
