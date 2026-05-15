@@ -1,8 +1,6 @@
 # Exercícios ASCII
 
-## 1. Converter para binários
-
-Conversão de palavras e frases para binário utilizando a tabela ASCII clássica.
+## 1. Converter para binários utilizando a tabela ASCII clássica oferecida em material (Considere a diferença entre maiúsculos e minúsculos e a eventual presença de espaços):.
 
 ---
 
@@ -36,11 +34,26 @@ Conversão de palavras e frases para binário utilizando a tabela ASCII clássic
 01010011 01000100 01010010 01000001 01001101 00100000 01000100 01000100 01010010 00100000 01001101 01100101 01101101 01101111 01110010 01111001
 ```
 
-e. Fatec Zona Leste
+---
 
 
-f. Semestre 1
+### e) Fatec Zona Leste
+
+```binary
+
+```
+
+---
 
 
-g. 2013 tem digitos diferentes
+### f) Semestre 1
+```binary
 
+```
+
+---
+
+### g) 2013 tem digitos diferentes
+```binary
+
+```
